@@ -78,6 +78,9 @@ dependencies {
 	api "org.eclipse.jetty:jetty-server:$jettyVersion"
 	api "org.eclipse.jetty:jetty-webapp:$jettyVersion"
 	api "com.google.guava:guava:33.3.1-jre" // override com.palantir.docker.compose using old version fails on maven project
+	api "com.fasterxml.jackson.core:jackson-core:$jacksonVersion"
+	api "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
+	api "com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion" // override docker-compose-junit-jupiter using old Jackson version
 	api "org.junit.jupiter:junit-jupiter-api:$junitVersion"
 
 	optionalImplementation "org.zkoss.common:zcommon:${zkVersion}"
